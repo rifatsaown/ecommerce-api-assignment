@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Application routes
-app.use('/', routes);
+app.use('/api', routes);
 
 //Welcome route
 app.get('/', async (req: Request, res: Response) => {
