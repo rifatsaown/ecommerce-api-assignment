@@ -24,7 +24,7 @@ const getAllProducts = async (req: Request, res: Response) => {
           new ApiResponse(
             200,
             products,
-            `Products matching search term ${searchTerm} fetched successfully!`
+            `Products matching search term ${searchTerm} fetched successfully!`,
           ),
         );
     } catch (error) {
@@ -99,13 +99,10 @@ const deleteProduct = async (req: Request, res: Response) => {
   }
 };
 
-const searchProducts = async (req: Request, res: Response) => {};
-
 export const productController = {
   createProduct,
   getAllProducts,
   getProductById,
   updateProduct,
   deleteProduct,
-  searchProducts,
 };

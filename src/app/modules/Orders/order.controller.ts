@@ -38,7 +38,6 @@ const createOrder = async (req: Request, res: Response) => {
 
 const getAllOrders = async (req: Request, res: Response) => {
   const email = req.query.email as string;
-  console.log(email);
 
   if (email) {
     try {
